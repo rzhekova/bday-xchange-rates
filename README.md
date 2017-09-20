@@ -14,6 +14,8 @@ The date should be displayed in the following format "15th January 2017"
 
 Try to keep this task as simple as possible, it's suggested that you use Laravel to build this. While we know it seems a little overkill this is more to test your understanding of the framework and how you would use it. There are no frontend requirements so feel free to use standard html or base bootstrap, your choice.
 
+Once you have completed the task please push the work to the repository provided in the email.
+
 ### Resources
 
 - http://fixer.io/
