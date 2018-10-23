@@ -18,7 +18,7 @@ class CreateBirthdayExchangeRatesTable extends Migration
             $table->integer('appears')->default(1);
             $table->string('date');
             $table->string('formatted_date');
-            $table->text('exchange_rates')->defailt([]);
+            $table->text('exchange_rates');
             $table->timestamps();
         });
     }

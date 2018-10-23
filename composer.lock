@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26c27c3f93b3bdb2643e7e1d10bcd739",
+    "content-hash": "4c63982e111bd20438cd94c5c924b986",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -634,17 +634,132 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
-            "name": "laravel/framework",
-            "version": "v5.7.9",
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.71",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05"
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "bfb7d00c70d0ad59037bed7f08a2b6c10b1ed2ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/172f69f86bb86e107fb9fafff293b4b01291cf05",
-                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/bfb7d00c70d0ad59037bed7f08a2b6c10b1ed2ba",
+                "reference": "bfb7d00c70d0ad59037bed7f08a2b6c10b1ed2ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.5|^6.5",
+                "satooshi/php-coveralls": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "time": "2018-10-16T18:51:19+00:00"
+        },
+        {
+            "name": "jenssegers/agent",
+            "version": "v2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/agent.git",
+                "reference": "df71082ed2a95fc8a82ba30832ccf72df939f02a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/agent/zipball/df71082ed2a95fc8a82ba30832ccf72df939f02a",
+                "reference": "df71082ed2a95fc8a82ba30832ccf72df939f02a",
+                "shasum": ""
+            },
+            "require": {
+                "jaybizzle/crawler-detect": "^1.2",
+                "mobiledetect/mobiledetectlib": "^2.7.6",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0|^6.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Agent\\AgentServiceProvider"
+                    ],
+                    "aliases": {
+                        "Agent": "Jenssegers\\Agent\\Facades\\Agent"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Agent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "Desktop/mobile user agent parser with support for Laravel, based on Mobiledetect",
+            "homepage": "https://github.com/jenssegers/agent",
+            "keywords": [
+                "Agent",
+                "browser",
+                "desktop",
+                "laravel",
+                "mobile",
+                "platform",
+                "user agent",
+                "useragent"
+            ],
+            "time": "2017-11-10T10:35:35+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v5.7.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "7d748c33b8c409b9b0c96704d6493853de41754d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7d748c33b8c409b9b0c96704d6493853de41754d",
+                "reference": "7d748c33b8c409b9b0c96704d6493853de41754d",
                 "shasum": ""
             },
             "require": {
@@ -726,6 +841,7 @@
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
+                "filp/whoops": "Required for friendly error pages in development (^2.1.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (^1.4).",
                 "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (^6.0).",
                 "laravel/tinker": "Required to use the tinker console command (^1.0).",
@@ -773,7 +889,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-10-09T13:28:28+00:00"
+            "time": "2018-10-23T14:05:19+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -921,6 +1037,58 @@
                 "storage"
             ],
             "time": "2018-10-15T13:53:10+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.8.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/cd385290f9a0d609d2eddd165a1e44ec1bf12102",
+                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35||~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Mobile_Detect.php"
+                ],
+                "psr-0": {
+                    "Detection": "namespaced/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "time": "2018-09-01T15:05:15+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2709,16 +2877,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a9f129b99df316f847584d482c89c14a9f796e2b"
+                "reference": "bc0fd11bc455cc20ee4b5edabc63ebbf859324c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a9f129b99df316f847584d482c89c14a9f796e2b",
-                "reference": "a9f129b99df316f847584d482c89c14a9f796e2b",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/bc0fd11bc455cc20ee4b5edabc63ebbf859324c7",
+                "reference": "bc0fd11bc455cc20ee4b5edabc63ebbf859324c7",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2934,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2018-10-20T09:00:00+00:00"
+            "time": "2018-10-23T09:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -3361,16 +3529,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "6.1.1",
+            "version": "6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "b097681a19a48e52706f57e47a09594bac4f7cab"
+                "reference": "4d3ae9b21a7d7e440bd0cf65565533117976859f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/b097681a19a48e52706f57e47a09594bac4f7cab",
-                "reference": "b097681a19a48e52706f57e47a09594bac4f7cab",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/4d3ae9b21a7d7e440bd0cf65565533117976859f",
+                "reference": "4d3ae9b21a7d7e440bd0cf65565533117976859f",
                 "shasum": ""
             },
             "require": {
@@ -3420,7 +3588,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-10-18T09:01:38+00:00"
+            "time": "2018-10-23T05:59:32+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3613,16 +3781,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.4.1",
+            "version": "7.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c5a120ade60992bd671a912188ee9ee9f8083bbd"
+                "reference": "c151651fb6ed264038d486ea262e243af72e5e64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c5a120ade60992bd671a912188ee9ee9f8083bbd",
-                "reference": "c5a120ade60992bd671a912188ee9ee9f8083bbd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c151651fb6ed264038d486ea262e243af72e5e64",
+                "reference": "c151651fb6ed264038d486ea262e243af72e5e64",
                 "shasum": ""
             },
             "require": {
@@ -3693,7 +3861,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-10-18T09:02:52+00:00"
+            "time": "2018-10-23T05:57:41+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

@@ -16,4 +16,4 @@ Route::get('/', 'BirthdayExchangeRateController@index');
 
 Route::post('/', 'BirthdayExchangeRateController@store');
 
-Route::get('/results', 'BirthdayExchangeRateController@displayResults');
+Route::get('/results', 'BirthdayExchangeRateController@displayResults')->name('results');

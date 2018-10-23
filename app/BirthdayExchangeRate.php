@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BirthdayExchangeRate extends Model
-{
+class BirthdayExchangeRate extends Model {
+    
     protected $casts = [
-        'exchange_rates' => 'array'
+        'exchange_rates' => 'object'
     ];
 
     protected $fillable = [
