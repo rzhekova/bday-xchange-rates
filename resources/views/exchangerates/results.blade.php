@@ -90,7 +90,7 @@
 	.card {
 		border-radius: 0;
 		border-color: grey;
-		padding: 60px; 
+		padding: 59px 60px; 
 		margin: 20px;
 	}
   </style>

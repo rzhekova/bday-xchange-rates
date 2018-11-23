@@ -44,7 +44,7 @@ class BirthdayExchangeRateController extends Controller {
         $number_of_occurrences = BirthdayExchangeRate::where('date', $entered_date['date'])->count();
         echo($number_of_occurrences);
 
-        if($number_of_occurrences >= 1) {
+        if($number_of_occurrences === 1) {
 
             $updated_entry = BirthdayExchangeRate::where('date', $entered_date['date'])->first();
 
